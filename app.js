@@ -15,10 +15,12 @@ nunjucks.configure('./views', {
 app.set('view engine', 'html');
 // Usamos nunjucks cuando 'res.render' reciba archivos html.
 app.engine('html', nunjucks.render);
-
+// Usamos bodyParser para parsear una url.
 app.use (bodyParser.urlencoded ({extended : false}));
+// Usamos bodyParser para parsear un JSON.
 app.use (bodyParser.json());
-app.use (express.static ('./public'))
+// Servimos los archivos estaticos desde el directorio ./public.
+app.use (express.static ('./public'));
 app.use (morgan('tiny'));
 app.use ('/', routes);
 

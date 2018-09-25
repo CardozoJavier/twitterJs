@@ -1,18 +1,19 @@
 {
-  "name": "twitterJs",
+  "name": "twitter",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon app.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
-  },
-  "devDependencies": {},
-  "description": ""
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
+    "nunjucks": "^3.1.3"
+  }
 }
